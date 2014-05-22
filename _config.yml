@@ -1,0 +1,17 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            wrtsprt
+tagline:          wrtsprt sein blog.
+url:              https://wrtsprt.github.io
+paginate:         1
+baseurl:          /
+author:
+  name:           Raphael Doehring
+  url:            https://twitter.com/wrtsprt
+
