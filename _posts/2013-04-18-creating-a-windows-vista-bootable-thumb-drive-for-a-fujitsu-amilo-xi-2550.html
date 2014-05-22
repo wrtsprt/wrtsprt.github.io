@@ -1,0 +1,26 @@
+---
+layout: post
+title: Creating a Windows Vista bootable thumb drive for a Fujitsu AMILO XI 2550
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _publicize_pending: '1'
+author: 
+---
+<p>This is a short protocol of my experience reinstalling Windows Vista on a Fujitsu AMILO XI 2550.</p>
+<p>I basically followed this guide: http://www.raymond.cc/blog/how-to-burn-downloaded-windows-vista-to-dvd/. A couple of small remarks though:</p>
+<ul>
+<li>alternative Vista files download source: http://www.lolametro.de/de/windows-iso-download-links/</li>
+<li>after step 5 I used http://www.wintobootic.com to put the ISO on a USB stick</li>
+<li>the catch: make sure to add the onboard RAID controller driver to the install medium (otherwise there will be no drives visible to install Windows)
+<ul>
+<li>go to http://support.ts.fujitsu.com/Download/Index.asp</li>
+<li>serial: ysvb012285</li>
+<li>select Windows Vista</li>
+<li>select SATA -&gt; JMicron RAID Controller (Onboard) -&gt; RAID controller JMB36X</li>
+</ul>
+</li>
+</ul>

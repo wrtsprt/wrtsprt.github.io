@@ -1,0 +1,20 @@
+---
+layout: post
+title: CCMenu with TeamCity
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _publicize_pending: '1'
+author: 
+---
+<p>One of the hats someone has to wear in our team every so many weeks is checking on the status of all projects on our CI server. Basically that boils down to one bit of information: is everything green OR not. I prefered not to have to look at UI of the CI server - there is just too much distraction there. All I wanted was one light being green or red on my Mac.</p>
+<p>I googled for monitoring tools, menubar app etc and it turned out not to be that obvious. After a while I found a great solution, and I quickly want to share the gist of it.</p>
+<p>There is a great little app called <a href="http://ccmenu.sourceforge.net/">ccmenu</a>, that does exactly what I needed. I had actually used this before and forgotten about it. I remembered, that it could natively understand jenkins and cruisecontrol ci output. The project page also mentions support for TeamCity, which is what we use.</p>
+<p>Unfortunately I also had to spend some time finding out how to make them work together. Finally I found the <a title="TeamCity REST+API" href="http://confluence.jetbrains.com/display/TW/REST+API#RESTAPI-CCTray">documentation on TeamCity speaking CCTray format</a>, which is kind of the standard here.</p>
+<p>So basically all you have to do is installing your ccmenu and pointing it to this URL (relative to YOUR CI server):</p>
+<pre><tt><tt><a href="http://teamcity:8111/httpAuth/app/rest/cctray/projects.xml" rel="nofollow">http://teamcity:8111/httpAuth/app/rest/cctray/projects.xml</a></tt>
+</tt></pre>
+<p>Done.</p>
