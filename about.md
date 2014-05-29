@@ -1,11 +1,10 @@
 ---
 layout: page
-title: About
+title:  about
 ---
 
-<p class="message">
-  message
-</p>
+This is technical blog of [wrtsprt](https://github.com/wrtsprt/). Its build on top of [jekyll](https://github.com/jekyll/jekyll),
+[poole](https://github.com/poole) and [Lanyon](https://lanyon.getpoole.com).
 
-rest.
+
 

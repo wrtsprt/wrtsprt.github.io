@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -9,8 +9,9 @@ permalink:        pretty
 title:            wrtsprt
 tagline:          wrtsprt sein blog.
 url:              https://wrtsprt.github.io
-paginate:         1
 baseurl:          /
+description:      '/* no comment */'
+paginate:         5
 author:
   name:           Raphael Doehring
   url:            https://twitter.com/wrtsprt
