@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            wrtsprt
 tagline:          wrtsprt sein blog.
-url:              https://wrtsprt.github.io
+url:              http://blog.wrtsprt.me
 baseurl:          /
 description:      '/* no comment */'
 paginate:         5
