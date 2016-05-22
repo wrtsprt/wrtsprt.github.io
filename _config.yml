@@ -16,3 +16,12 @@ author:
   name:           Raphael Doehring
   url:            https://twitter.com/wrtsprt
 
+# Archives
+jekyll-archives:
+  enabled:
+    - year
+  layouts:
+    year: yearly
+
+gems:
+  - jekyll-archives
